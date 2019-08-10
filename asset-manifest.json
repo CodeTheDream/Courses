@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/courses/static/css/main.2ba457f4.chunk.css",
+    "main.css": "/courses/static/css/main.64abe77d.chunk.css",
     "main.js": "/courses/static/js/main.dd3bf396.chunk.js",
     "main.js.map": "/courses/static/js/main.dd3bf396.chunk.js.map",
     "runtime~main.js": "/courses/static/js/runtime~main.5d9517cb.js",
@@ -8,9 +8,9 @@
     "static/js/2.3ae8009d.chunk.js": "/courses/static/js/2.3ae8009d.chunk.js",
     "static/js/2.3ae8009d.chunk.js.map": "/courses/static/js/2.3ae8009d.chunk.js.map",
     "index.html": "/courses/index.html",
-    "precache-manifest.0c810527504b43dad75836dfc50927cf.js": "/courses/precache-manifest.0c810527504b43dad75836dfc50927cf.js",
+    "precache-manifest.cbf7839df2527404d5dbeac08d0d2da1.js": "/courses/precache-manifest.cbf7839df2527404d5dbeac08d0d2da1.js",
     "service-worker.js": "/courses/service-worker.js",
-    "static/css/main.2ba457f4.chunk.css.map": "/courses/static/css/main.2ba457f4.chunk.css.map",
+    "static/css/main.64abe77d.chunk.css.map": "/courses/static/css/main.64abe77d.chunk.css.map",
     "static/media/ctd-labs-logo.png": "/courses/static/media/ctd-labs-logo.bdbeefd6.png",
     "static/media/ctd-logo.png": "/courses/static/media/ctd-logo.a3287f5d.png",
     "static/media/logo.svg": "/courses/static/media/logo.5d5d9eef.svg"
