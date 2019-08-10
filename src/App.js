@@ -11,7 +11,7 @@ import About from "./containers/About";
 function App() {
   return (
     <div className="App">
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
           <Navigation />
           <Switch>
             <Route exact path={ROUTES.HOME} component={Dashboard} />
