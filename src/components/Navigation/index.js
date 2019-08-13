@@ -8,7 +8,7 @@ const Navigation = () => (
     <nav className="navigation">
       <div className="nav-content">
         <div className="logo-wrapper">
-          <img src={Logo} />
+          <Link to={ROUTES.HOME}><img src={Logo} /></Link>
         </div>
         <ul>
           <li>

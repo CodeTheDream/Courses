@@ -18,7 +18,7 @@ function App() {
           <Switch>
             <Route exact path={ROUTES.HOME} component={Dashboard} />
             <Route exact path={ROUTES.ABOUT} component={About} />
-            <Route exact path={'/react_fall_2019'} component={ReactF2019} />
+            <Route exact path={ROUTES.REACT_FALL19} component={ReactF2019} />
             <Route exact path={ROUTES.REACT_RESOURCES} component={ReactResources} />
           </Switch>
           <Footer />
