@@ -1,5 +1,5 @@
-export const HOME = '/';
-export const ABOUT  = '/about';
-export const REACT_RESOURCES="/react-resources"
-export const REACT_FALL19='/react_fall_2019'
+export const HOME = '/Courses';
+export const ABOUT  = '/Courses/about';
+export const REACT_RESOURCES="Courses/react-resources"
+export const REACT_FALL19='Courses/react_fall_2019'
 
