@@ -33,8 +33,12 @@ class Dashboard extends React.Component {
     return (
       <div className="view-container dashboard">
         <div className="dashboard-content">
+          <h3>Code the Dream Classes</h3>
           <p>Welcome Code the Dream students. Select your class below to check out the syllabus.</p>
+          <ul className="class-list">
+         <Link to="react-resources">React - Resources</Link>
          <Link to="react_fall_2019">React - Fall 2019</Link>
+          </ul>
         </div>
       </div>
     );

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import Assignments from '../../components/Assignments'
+import Courses from '../../components/Assignments'
 
-class ReactF2019 extends React.Component {
+class ReactResources extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -17,7 +17,7 @@ class ReactF2019 extends React.Component {
       }
     
       getCourses() {
-        fetch("https://api.airtable.com/v0/appgAr8AE94OY9Ej9/React%20Fall%202019?maxRecords=3&view=Grid%20view", {
+        fetch("https://api.airtable.com/v0/appgAr8AE94OY9Ej9/react%20resources?maxRecords=10&view=Grid%20view", {
          headers: {"Authorization": "Bearer " + process.env.REACT_APP_AT_KEY}
        }).then((response) => response.json())
            .then((responseData) => {
@@ -32,14 +32,14 @@ class ReactF2019 extends React.Component {
     render () {
         const courses = this.state.courses
         return (
-            <div className="view-container">
-            <h3>React Fall 2019</h3>
+            <div className="view-container ">
+            <h3>React Resources</h3>
             <p>
-             Welcome React Fall 2019 Remote students. This is going to be an awesome cohort! Below is a list of assignments and due dates. 
+            Hey students, interns, and front-end developers. The following is a list of resources that we think will help you on your road to becoming a great front-end developer. Go through this list of assignments from top to bottom and once you have it all done you shoudl be well on your way to being an accomplished front-end dev.
             </p>
             <div className="assignment-box">
-            <h4>Assignments</h4>
-            {courses && <Assignments
+            <h4>Resources, Tutorials, & Assignments</h4>
+            {courses && <Courses 
             courses={this.state.courses}
             />}
             </div>
@@ -47,4 +47,4 @@ class ReactF2019 extends React.Component {
         </div>
         )}
 }
-export default ReactF2019;
+export default ReactResources;

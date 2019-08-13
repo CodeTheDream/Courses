@@ -7,6 +7,7 @@ import Dashboard from "./containers/Dashboard";
 import * as ROUTES from "./constants/routes.js";
 import About from "./containers/About";
 import ReactF2019 from './containers/React_Fall_2019'
+import ReactResources from './containers/React_Resources'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route exact path={ROUTES.HOME} component={Dashboard} />
             <Route exact path={ROUTES.ABOUT} component={About} />
             <Route exact path={'/react_fall_2019'} component={ReactF2019} />
+            <Route exact path={ROUTES.REACT_RESOURCES} component={ReactResources} />
           </Switch>
           <Footer />
         </Router>

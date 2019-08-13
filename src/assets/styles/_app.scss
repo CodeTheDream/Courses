@@ -1,5 +1,5 @@
 .App {
-    text-align: center;
+    // text-align: center;
     font-family: $main-font;
     font-size: 1.1em;
     color: #333;
@@ -32,6 +32,7 @@
   .view-container {
     max-width: $maxWidth;
     margin: 0 auto;
+    padding-top: 100px;
   }
   
   @keyframes App-logo-spin {
