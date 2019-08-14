@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, HashRouter } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Dashboard from "./containers/Dashboard";
@@ -13,7 +13,7 @@ import ReactResources from './containers/React_Resources'
 function App() {
   return (
     <div className="App">
-        <Router basename={process.env.PUBLIC_URL}>
+        <HashRouter basename='/'>
           <Navigation />
           <Switch>
             <Route exact path={ROUTES.HOME} component={Dashboard} />
@@ -22,7 +22,7 @@ function App() {
             <Route exact path={ROUTES.REACT_RESOURCES} component={ReactResources} />
           </Switch>
           <Footer />
-        </Router>
+        </HashRouter>
     </div>
   );
 }
