@@ -16,18 +16,18 @@ class ReactResources extends React.Component {
   }
 
   getCourses() {
+    const url = "https://api.airtable.com/v0/appgAr8AE94OY9Ej9/react%20resources?maxRecords=10&view=Grid%20view"
     fetch(
-      "https://api.airtable.com/v0/appgAr8AE94OY9Ej9/react%20resources?maxRecords=10&view=Grid%20view",
+      url,
       {
-        headers: { Authorization: "Bearer " + process.env.REACT_APP_AT_KEY }
+       headers: { Authorization: "Bearer " + process.env.REACT_APP_AT_KEY }
       }
     )
       .then(response => response.json())
       .then(responseData => {
+        console.log('My data', responseData)
         const courses = responseData.records;
-        this.setState({ courses }, () => {
-          //  console.log(this.state.issues);
-        });
+        this.setState({ courses:courses });
       });
   }
 

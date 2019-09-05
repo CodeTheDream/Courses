@@ -17,7 +17,7 @@ class ReactF2019 extends React.Component {
       }
     
       getCourses() {
-        fetch("https://api.airtable.com/v0/appgAr8AE94OY9Ej9/React%20Fall%202019?maxRecords=3&view=Grid%20view", {
+        fetch("https://api.airtable.com/v0/appgAr8AE94OY9Ej9/React%20Fall%202019?&view=Grid%20view", {
          headers: {"Authorization": "Bearer " + process.env.REACT_APP_AT_KEY}
        }).then((response) => response.json())
            .then((responseData) => {
@@ -38,7 +38,7 @@ class ReactF2019 extends React.Component {
              Welcome React Fall 2019 Remote students. This is going to be an awesome cohort! Below is a list of assignments and due dates. 
             </p>
             <div className="assignment-box">
-            <h4>Assignments</h4>
+            <h4>Schedule</h4>
             {courses && <Assignments
             courses={this.state.courses}
             />}

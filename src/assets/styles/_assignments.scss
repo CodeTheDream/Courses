@@ -4,11 +4,41 @@
 
 .assignment-li {
     margin-bottom: .25em;
-  a {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    padding: .25em .25em;
+    a {
       font-size: 22px;
   }
+
 }
 .assignment-box {
     border-top: 1px solid black;
     margin-top: 30px;
+}
+.schedule-header {
+    div {
+        font-weight: 700;
+        font-size: 22px;
+    }
+}
+
+.highlighted-assignment {
+    background: $orange-opaque;
+    color: white;
+    padding: .35em .25em;
+    font-weight: 700;
+    border-radius: .25em;
+}
+
+.assignment-link {
+    text-align: right;
+    margin-right: .5em;
+    a {
+        color: white;
+        font-size: 16px;
+    }
+    img {
+        width: 16px;
+    }
 }
