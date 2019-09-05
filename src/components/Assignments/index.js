@@ -12,7 +12,7 @@ const Assignments = (courses) => {
       console.log(course, i)
       return (
         <li className={course.fields.highlight ? "assignment-li highlighted-assignment" : "assignment-li"} key={course.fields.name}>
-         <div>{course.fields.name}</div>
+         <div>{course.fields.url ? <a target="_blank" href={course.fields.url}>{course.fields.name}</a> : course.fields.name}</div>
          <div>{course.fields.week}</div>
          <div>{course.fields.due_date}</div>
          {course.fields.url && <div className="assignment-link"><a target="_blank" href={course.fields.url}><img src={LinkIcon}/></a></div>}
